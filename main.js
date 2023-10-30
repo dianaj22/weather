@@ -5,8 +5,7 @@ const selectedCityWeather = document.getElementById('selectedCityWeather');
 const elementCount = document.getElementById('elementCount');
 
 
-let savedCities = JSON.parse(sessionStorage.getItem('savedCities'));// obtinem valoarea stocata sub key
-
+let savedCities = JSON.parse(sessionStorage.getItem('savedCities'));// valoarea stocata sub key
 if (!savedCities) {
     savedCities = []; // daca nu este nici o valoare salvata, atunci initializam ca un array gol
 }
@@ -20,7 +19,7 @@ function showSavedCities() {
         savedCities.forEach(city => {
             const cityLink = document.createElement('a');
             cityLink.textContent = city;
-            cityLink.setAttribute('href', '#'); //Valoarea '#' => link-ul este setat sa conduca la o ancora goala, pt a nu duce la o alta pagina
+            cityLink.setAttribute('href', '#'); //Valoarea '#' => link-ul este setat sa conduca la o ancora goala
             cityLink.addEventListener('click', (event) => {
 
                 getWeather(city);
@@ -99,12 +98,12 @@ async function getWeather(city) {
     } else {
         alert('Orasul nu exista');
     }
-    cityInput.disabled = true; //dezactivam bara de cautare
-    getWeatherButton.disabled = true; // dezactivam butonul de cautare 
+    cityInput.disabled = true;
+    getWeatherButton.disabled = true;
 }
 
 async function checkCityValidity(city) {
-    const apiKey = 'd641eb66efbcb6598010a4fa9ebebc4e'; // Obțineți o cheie API de pe OpenWeatherMap
+    const apiKey = 'd641eb66efbcb6598010a4fa9ebebc4e'; 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ro`;
 
     const response = await fetch(apiUrl);
