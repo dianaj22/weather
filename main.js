@@ -67,10 +67,7 @@ getWeatherButton.addEventListener('click', () => {
                     alert('Orasul nu exista sau este invalid');
                 }
             })
-            .catch(error => {
-                console.error('Eroare la verificarea orasului:', error);
-                alert('Eroare la verificarea orasului');
-            });
+           
     } else {
         alert('Introdu un oras');
     }
