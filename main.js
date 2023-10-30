@@ -64,7 +64,7 @@ getWeatherButton.addEventListener('click', () => {
                     sessionStorage.setItem('elementCount', savedCities.length);
                     showSavedCities();
                 } else {
-                    alert('Orasul nu exista sau este invalid');
+                    alert('Orasul nu este valid');
                 }
             })
            
