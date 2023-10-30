@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+h2 {
+
+  font-size: 20px;;
+  color: black;
+  padding: 20px;
+}
+
+p {
+  color: black;
+}
+
+#cityInput {
+  margin-left: 20px;
+}
+
+#elementCount {
+  margin-left: 20px;
+}
+
+#selectedCityWeather {
+  margin-top: -100px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-section {
+  padding: 10px;
+}
+
+.right-section {
+  padding: 10px;
+  /* padding-top: -60px; */
+  /* background-color: #9e4444; */
+}
+
+.city-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}

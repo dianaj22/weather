@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vremea</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h2>Vremea in oras</h2>
+    <div class="input-container">
+        <input type="text" id="cityInput" placeholder="Introdu orasul">
+        <button id="getWeatherButton">Afiseaza vremea</button>
+        <button id="resetListButton">Reseteaza lista </button>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <ul id="cityList"></ul>
+            <div id="elementCount">Nr de elemente: 0</div>
+
+        </div>
+
+        <div class="right-section">
+            <div id="selectedCityWeather"></div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
